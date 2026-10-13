@@ -58,10 +58,9 @@ Pengajar sering kali menghabiskan waktu bertumpuk-tumpuk jam hanya untuk memerik
                                                    │  (AI Scoring)  │
                                                    └────────────────┘# koreksi-in-lab
 
-
-
-
-## 🔄 Arsitektur & Workflow
+```
+---
+## Workflow
 flowchart LR
     classDef dosen fill:#2b5c8f,color:#fff,stroke:#1a365d;
     classDef mhs fill:#2e7d32,color:#fff,stroke:#1b5e20;
@@ -85,8 +84,8 @@ flowchart LR
         H --> I[One-Click Approve / Override]:::dosen
     end
 
-
-## 📂 Struktur Repositori
+---
+## Struktur
 koreksi-in/
 ├── 📁 src/
 │   ├── 📁 app/                 # Next.js App Router (Pages & API Routes)
@@ -102,32 +101,5 @@ koreksi-in/
 ├── README.md                   # Documentation
 └── package.json
 
-## 💻 Instalasi & Pengembangan
-1. Prasyarat
-
-    Node.js versi 18.x atau yang lebih baru
-
-    Akun Supabase (Database & Storage)
-
-    API Key Google Gemini
-
-    Instance n8n (Lokal/Docker/VPS)
-
-2. Langkah-Langkah Setup
-    1. Clone Repositori Ini:
-        git clone [https://github.com/username/koreksi-in.git](https://github.com/username/koreksi-in.git)
-cd koreksi-in
-    2. Install Dependensi Project:
-        npm install
-# atau
-pnpm install
-
-    3. Konfigurasi Environment Variables:
-Buat file .env.local berdasarkan templat .env.example:
-      NEXT_PUBLIC_SUPABASE_URL=[https://your-supabase-project.supabase.co](https://your-supabase-project.supabase.co)
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your-supabase-anon-key
-SUPABASE_SERVICE_ROLE_KEY=your-supabase-service-role-key
-N8N_WEBHOOK_URL=[https://your-n8n-instance.com/webhook/koreksi-eval](https://your-n8n-instance.com/webhook/koreksi-eval)
-    4. Jalankan Development Server: npm run dev || Buka browser dan akses http://localhost:3000.
 
 
