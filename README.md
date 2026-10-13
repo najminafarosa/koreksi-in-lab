@@ -61,6 +61,7 @@ Pengajar sering kali menghabiskan waktu bertumpuk-tumpuk jam hanya untuk memerik
 ```
 ---
 ## Workflow
+```text
 flowchart LR
     classDef dosen fill:#2b5c8f,color:#fff,stroke:#1a365d;
     classDef mhs fill:#2e7d32,color:#fff,stroke:#1b5e20;
@@ -83,9 +84,10 @@ flowchart LR
         G --> H[Split-Screen Review]:::dosen
         H --> I[One-Click Approve / Override]:::dosen
     end
-
+```
 ---
 ## Struktur
+```text
 koreksi-in/
 ├── 📁 src/
 │   ├── 📁 app/                 # Next.js App Router (Pages & API Routes)
